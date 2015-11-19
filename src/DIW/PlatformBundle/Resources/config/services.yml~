@@ -1,0 +1,3 @@
+services:
+    diw_platform.antispam:
+        class: DIW\PlatformBundle\Antispam\DIWAntispam

@@ -1,0 +1,3 @@
+diw_platform:
+    resource: "@DIWPlatformBundle/Resources/config/routing.yml"
+    prefix:   /

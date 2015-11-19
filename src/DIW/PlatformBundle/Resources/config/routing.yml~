@@ -1,0 +1,29 @@
+# src/DIW/PlatformBundle/Ressources/config/routing.yml
+
+diw_platform_home:
+    path:      /
+    defaults:  { _controller: DIWPlatformBundle:Advert:index, page: 1 }
+    requirements:
+        page: \d*
+
+diw_platform_view:
+    path:      /advert/{id}
+    defaults:  { _controller: DIWPlatformBundle:Advert:view }
+    requirements:
+        id: \d+
+
+diw_platform_add:
+    path:      /add
+    defaults:  { _controller: DIWPlateformBundle:Advert:add }
+
+diw_platform_edit:
+    path:      /edit/{id}
+    defaults:  { _controller: DIWPlatformBundle:Advert:edit }
+    requirements:
+        id: \d+
+
+diw_platform_delete:
+    path:      /delete/{id}
+    defaults:  { _controller: DIWPlatformBundle:Advert:delete }
+    requirements:
+        id: \d+

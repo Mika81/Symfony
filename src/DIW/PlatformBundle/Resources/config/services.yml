@@ -1,0 +1,6 @@
+# src/DIW/PlatformBundle/Resources/config/services.yml
+
+services:
+    diw_platform.antispam:
+        class: DIW\PlatformBundle\Antispam\DIWAntispam
+        arguments: [@mailer, %locale%, 50]
